@@ -58,7 +58,7 @@ def runIndicator(year):
     statistics = Utilities(mergedData, year, column, long_entries, short_entries, FILE.SYMBOL,
                            param_names, name,
                            value_type="Winrate")
-    statistics.plot(trades=True)
+    statistics.plot(trades=True,heatmap=True, volume=True)
     pprint.pprint(statistics.bestStrategies)
 
 
