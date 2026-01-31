@@ -10,10 +10,13 @@ vbt.settings["plotting"]["layout"]["width"] = 910
 vbt.settings.portfolio["fees"] = 0.00042
 vbt.settings.portfolio["slippage"] = 0.0005
 vbt.settings.portfolio["sl_stop"] = 0.0025
+
+
 vbt.settings.portfolio["tp_stop"] = 0.005
 
 
 class Utilities:
+
     def __init__(self, mergedData, year, column, long_entries, short_entries, symbol, params, short_name,
                  value_type=None):
         self.mergedData = mergedData

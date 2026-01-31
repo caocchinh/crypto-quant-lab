@@ -12,10 +12,14 @@ numpy
 opencv-python
 openpyxl
 pandas
-pandas_ta
+pandas-ta
 pycryptodome
 python-binance
 python-dotenv
 requests
 behave
 vectorbt
+talib
+psutil
+pyarrow
+ta-lib

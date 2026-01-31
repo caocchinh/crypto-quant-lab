@@ -10,8 +10,8 @@ from FormatRegulator import FormatRegulator
 
 warnings.filterwarnings("ignore")
 
-hour_data_path = r"C:\Users\lenovo\OneDrive\Bitcoin\Binance Historical Data\1 Hour"
-minute_data_path = r"C:\Users\lenovo\OneDrive\Bitcoin\Binance Historical Data\1 Minute"
+hour_data_path = r"/home/caocchinh/Downloads/Bitcoin/Binance_Historical_Data/1 Hour"
+minute_data_path = r"/home/caocchinh/Downloads/Bitcoin/Binance_Historical_Data/1 Minute"
 
 
 def checkDictionary(i, data, dictionary, year):
@@ -52,7 +52,7 @@ class GetFile(FormatRegulator):
     def get_csv_file(path):
         crypto_currency_historical_data = pathlib.Path(path)
         historical_data = {}
-        data = list(crypto_currency_historical_data.glob("**\*.csv"))
+        data = list(crypto_currency_historical_data.glob("**/*.csv"))
         file_csv = [pathlib.Path(i) for i in data]
         if path is minute_data_path:
             filtered_2019_path = np.array([i for i in file_csv if fnmatch.fnmatch(i.name, "*2019_minute.csv") is True])
