@@ -42,7 +42,7 @@ def _read_file(filename):
 file = GetFile("DOGEUSDT", [2023]).getColumn(["Open", "High", "Low", "Close", "Volume"], merge=False)["DOGEUSDT_2023"]
 # pprint.pprint(file)
 file2 = _read_file(GetFile("ATOMUSDT", [2023]).PATH[0])
-file3 = _read_file(r"C:\Users\Chinh\Downloads\Binance_BCHUSDT_2023_minute.csv")
+file3 = _read_file(r"/home/caocchinh/Downloads/Bitcoin/Binance_Historical_Data/1 Minute/BCHUSDT/Binance_BCHUSDT_2023_minute.csv")
 # bt = Backtest(file, RSI, cash=454)
 
 
