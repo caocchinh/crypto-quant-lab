@@ -5,7 +5,7 @@ from matplotlib import pyplot as plt
 from matplotlib import dates as mpl_dates
 from GetFile import GetFile
 
-plt.style.use('seaborn')
+plt.style.use('mpl15')
 
 # dates = [
 #     datetime(2019, 5, 24),
@@ -24,7 +24,7 @@ plt.style.use('seaborn')
 # date_format = mpl_dates.DateFormatter("%b, %d, %Y")
 # plt.gca().xaxis.set_major_formatter(date_format)
 
-ethereum = GetFile(["ETHUSDT"],[2022]).getColumn(["Close"],merge=False)["ETHUSDT_2022"]
+ethereum = GetFile(["ETHUSDT"],[2021]).getColumn(["Close"],merge=False)["ETHUSDT_2021"]
 ethereum.index = pd.to_datetime(ethereum.index)
 price_date = ethereum.index
 price_close = ethereum

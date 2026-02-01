@@ -4,8 +4,8 @@ import pandas as pd
 
 plt.style.use("fivethirtyeight")
 
-symbol1 = "SOLUSDT"
-symbol2 = "ADAUSDT"
+symbol1 = "BCHUSDT"
+symbol2 = "DOTUSDT"
 symbols = f"{symbol1}-{symbol2}"
 year = 2023
 file = GetFile([symbol1,symbol2],[year]).getColumn(["Close"],merge=True)[year]["Close"]

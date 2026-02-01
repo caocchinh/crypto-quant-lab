@@ -6,7 +6,7 @@ year = []
 No_Smoothing = []
 Lowess = []
 
-with open(r"C:\Users\ccchi\OneDrive\Bitcoin\Plot\data.giss.nasa.gov_gistemp_graphs_graph_data_Global_Mean_Estimates_based_on_Land_and_Ocean_Data_graph.txt","r") as file:
+with open(r"/home/caocchinh/Downloads/Bitcoin/Plot/data.giss.nasa.gov_gistemp_graphs_graph_data_Global_Mean_Estimates_based_on_Land_and_Ocean_Data_graph.txt","r") as file:
     for line in file.readlines():
         if len(line.strip().split("     ")) == 3:
             year.append(line.strip().split("     ")[0])
